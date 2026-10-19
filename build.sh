@@ -14,7 +14,7 @@ mkdir -p "$MACOS_DIR" "$MODULE_CACHE_DIR"
 CLANG_MODULE_CACHE_PATH="$MODULE_CACHE_DIR" xcrun swiftc \
   -O \
   -framework Cocoa \
-  "$PROJECT_DIR/Sources/main.swift" \
+  "$PROJECT_DIR"/Sources/*.swift \
   -o "$MACOS_DIR/ScreenAwakeMenu"
 
 cp "$PROJECT_DIR/Info.plist" "$CONTENTS_DIR/Info.plist"
